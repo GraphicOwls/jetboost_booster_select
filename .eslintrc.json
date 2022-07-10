@@ -1,3 +1,18 @@
 {
-  "extends": "next/core-web-vitals"
+	"extends": "next/core-web-vitals",
+	"rules": {
+		"semi": ["error", "never"],
+		"quotes": ["error", "single"],
+		"array-bracket-newline": ["error", "always"],
+		"array-bracket-spacing": ["error", "always"],
+		"array-element-newline": ["error", "always"],
+		"block-spacing": ["error", "always"],
+		"no-trailing-spaces": ["error", "always"],
+		"object-curly-newline": [
+			"error",
+			{ "minProperties": 2 }
+		],
+		"object-property-newline": "error",
+		"object-curly-spacing": ["error", "always"]
+	}
 }
