@@ -62,8 +62,9 @@ export default function BoosterPicker() {
 							icon={
 								<BoosterIcon
 									type={item.internalKey}
-									size='30'
+									size='28'
 									color='#5e72e4'
+									style={{ minWidth: '28px' }}
 								/>
 							}
 							onChange={() => {

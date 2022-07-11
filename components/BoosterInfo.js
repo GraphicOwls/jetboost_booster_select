@@ -82,9 +82,10 @@ export default function BoosterInfo({ booster }) {
 					</p>
 					<div className='booster-info-tip'>
 						<InfoCircle
-							size='24'
+							size='20'
 							color='#5e72e4'
 							variant='Bulk'
+							style={{ minWidth: '20px' }}
 						/>
 						<span>
 							<strong>Tip:</strong> To filter a collection
@@ -105,9 +106,10 @@ export default function BoosterInfo({ booster }) {
 					</p>
 					<div className='booster-info-tip'>
 						<InfoCircle
-							size='24'
+							size='20'
 							color='#5e72e4'
 							variant='Bulk'
+							style={{ minWidth: '20px' }}
 						/>
 						<span>
 							<strong>Tip:</strong> To sort a collection by
