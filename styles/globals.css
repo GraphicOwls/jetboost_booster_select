@@ -11,7 +11,15 @@ body {
 	margin: 0;
 }
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
+	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
@@ -21,10 +29,21 @@ a {
 }
 
 .main {
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
 	flex: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
 	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
 	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	font-size: clamp(1rem, 5vw + 1rem, 5rem);
 }
@@ -53,7 +72,9 @@ hr {
 
 /* PICKER STYLES */
 .picker-group {
+	display: -ms-grid;
 	display: grid;
+	-ms-grid-columns: 1fr 1rem 1fr;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 1rem;
 	width: 100%;
@@ -68,8 +89,14 @@ hr {
 	border-radius: 8px;
 	cursor: pointer;
 	position: relative;
+	-webkit-transition-property: background-color;
+	-o-transition-property: background-color;
 	transition-property: background-color;
+	-webkit-transition-duration: 0.2s;
+	-o-transition-duration: 0.2s;
 	transition-duration: 0.2s;
+	-webkit-transition-timing-function: ease-out;
+	-o-transition-timing-function: ease-out;
 	transition-timing-function: ease-out;
 	background-color: #fff;
 	z-index: 1;
@@ -101,6 +128,7 @@ hr {
 .radio-selected {
 	background-color: #ebecfa;
 	border-color: #adb3eb;
+	-webkit-box-shadow: 0 0 0 2px #adb3eb;
 	box-shadow: 0 0 0 2px #adb3eb;
 }
 
@@ -114,6 +142,7 @@ hr {
 	top: 6px;
 	width: 24px;
 	aspect-ratio: 1/1;
+	display: -ms-grid;
 	display: grid;
 	place-items: center;
 }
@@ -138,7 +167,11 @@ hr {
 }
 
 .radio-title-group {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
 	align-items: center;
 	gap: 8px;
 	min-height: 28px;
@@ -193,6 +226,7 @@ h4 {
 }
 
 .booster-content > ul {
+	display: -ms-grid;
 	display: grid;
 	gap: 0.5rem;
 	margin-bottom: 0;
@@ -207,6 +241,8 @@ h4 {
 }
 
 .booster-info-tip {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	font-size: 0.9rem;
 	gap: 0.5em;
@@ -223,6 +259,7 @@ h4 {
 	}
 
 	.picker-group {
+		-ms-grid-columns: (1fr) [1];
 		grid-template-columns: repeat(1, 1fr);
 	}
 
