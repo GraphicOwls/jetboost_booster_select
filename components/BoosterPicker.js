@@ -40,6 +40,11 @@ export default function BoosterPicker() {
 			name: 'Real-Time List Search',
 			internalKey: 'LIST_SEARCH',
 		},
+		{
+			id: 'ck1h474gk000f0718tb59u98987',
+			name: 'Test Boost',
+			internalKey: 'TEST_BOOST',
+		},
 	]
 
 	const [isSelected, setIsSelected] = useState('')
@@ -59,6 +64,7 @@ export default function BoosterPicker() {
 							label={item.name}
 							value={item.id}
 							checked={item.id === isSelected}
+							description={item.description}
 							icon={
 								<BoosterIcon
 									type={item.internalKey}

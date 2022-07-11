@@ -21,6 +21,7 @@ export default function Radio({
 				id={id}
 				onChange={onChange}
 				name={name}
+				tabIndex={checked ? 0 : -1}
 			/>
 			<label
 				className={classNames('radio-label', {
@@ -28,6 +29,7 @@ export default function Radio({
 				})}
 				htmlFor={id}
 			>
+				<div className='indicator'></div>
 				<div className='radio-title-group'>
 					{icon}
 					<span>{label}</span>

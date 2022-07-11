@@ -157,5 +157,5 @@ export default function BoosterInfo({ booster }) {
 		},
 	}
 
-	return info[booster].content
+	return info[booster]?.content
 }
